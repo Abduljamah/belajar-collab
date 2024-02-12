@@ -8,7 +8,9 @@ public class kalkulator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int bil1,bil2;
+
+        int bilangan1,bilangan2;
+
 
         System.out.println("Pilih oprasi : ");
         System.out.println("1. Penjumlahan");
@@ -23,18 +25,20 @@ public class kalkulator {
 
         if (pilihan.equals("1")|| pilihan.equals("2")|| pilihan.equals("3") || pilihan.equals("4")){
             System.out.println("Masukan bilangan pertama: ");
-            bil1 = scanner.nextInt();
+
+            bilangan1 = scanner.nextInt();
             System.out.println("Masukan bilangan kedua");
-            bil2 = scanner.nextInt();
+            bilangan2 = scanner.nextInt();
 
             if (pilihan.equals("1")) {
-                System.out.println(bil1 + "+" + bil2+ " = "+ (bil1 + bil2));
+                System.out.println(bilangan1 + "+" + bilangan2+ " = "+ (bilangan1 + bilangan2));
             }else if(pilihan.equals("2")){
-                System.out.println(bil1 + "-" + bil2+ " = "+ (bil1 - bil2));
+                System.out.println(bilangan1 + "-" + bilangan2+ " = "+ (bilangan1 - bilangan2));
             }else if(pilihan.equals("3")){
-                System.out.println(bil1 + "*" + bil2+ " = "+ (bil1 * bil2));
+                System.out.println(bilangan1 + "*" + bilangan2+ " = "+ (bilangan1 * bilangan2));
             }else if(pilihan.equals("4")){
-                System.out.println(bil1 + "/" + bil2+ " = "+ (bil1 / bil2));
+                System.out.println(bilangan1 + "/" + bilangan2+ " = "+ (bilangan1 / bilangan2));
+
             
             }else{  System.out.println("Pilihan invalid");
 
