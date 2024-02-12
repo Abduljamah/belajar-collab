@@ -13,11 +13,13 @@ public class kalkulator {
         System.out.println("Pilih oprasi : ");
         System.out.println("1. Penjumlahan");
         System.out.println("2. Pengurangan");
+        System.out.println("1. Perkalian");
+        System.out.println("2. Pembagian");
 
-        System.out.println("Masukan pilihan (1/2)");
+        System.out.println("Masukan pilihan (1/2/3/4)");
         String pilihan = scanner.nextLine();
 
-        if (pilihan.equals("1")|| pilihan.equals("2")) {
+        if (pilihan.equals("1")|| pilihan.equals("2")|| pilihan.equals("3") || pilihan.equals("4")){
             System.out.println("Masukan bilangan pertama: ");
             angka1 = scanner.nextInt();
             System.out.println("Masukan bilangan kedua");
@@ -25,14 +27,17 @@ public class kalkulator {
 
             if (pilihan.equals("1")) {
                 System.out.println(angka1 + "+" + angka2+ " = "+ (angka1 + angka2));
-                
-            }else{
+            }else if(pilihan.equals("2")){
                 System.out.println(angka1 + "-" + angka2+ " = "+ (angka1 - angka2));
-            }
+            }else if(pilihan.equals("3")){
+                System.out.println(angka1 + "*" + angka2+ " = "+ (angka1 * angka2));
+            }else if(pilihan.equals("4")){
+                System.out.println(angka1 + "/" + angka2+ " = "+ (angka1 / angka2));
             
-        }else{  System.out.println("Pilihan invalid");
+            }else{  System.out.println("Pilihan invalid");
 
         }
 
     }
+}
 }
